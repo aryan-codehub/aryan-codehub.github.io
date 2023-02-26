@@ -1,0 +1,52 @@
+myDiv {
+  border: 5px outset red;
+  background-color: blue;
+  text-align: center;
+}
+
+h1 {
+  color: navy;
+  margin-left: 0px;
+}
+ 
+body {
+  background-color: chartreuse;
+} 
+
+.grid-header {
+  grid-area: header;
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid-menu {
+  grid-area: menu;
+  text-align: left;
+  font-size: 15px;
+}
+
+.grid-main {
+  grid-area: main;
+}
+
+.grid-right {
+  grid-area: right;
+}
+
+.grid-footer {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu menu menu main main right'
+    'menu menu menu footer footer footer';
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  padding: 20px 0;
+} 
